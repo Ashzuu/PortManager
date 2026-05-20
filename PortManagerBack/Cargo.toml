@@ -1,0 +1,27 @@
+[package]
+name = "PortManagerBack"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Serveur Web Asynchrone (Axum + Tokio)
+axum = "0.7"
+tokio = { version = "1.36", features = ["full"] }
+
+# Sérialisation JSON pour les contrats d'API (CDC section 6)
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+# Interaction Sécurisée avec Docker (/var/run/docker.sock)
+bollard = "0.16"
+
+# Authentification (JWT)
+jsonwebtoken = "9.2"
+
+# Exécution de commandes systèmes sécurisées
+tokio-process = "0.2"
+
+# Logs et variables d'environnement
+tracing = "0.1"
+tracing-subscriber = "0.3"
+dotenvy = "0.15"
