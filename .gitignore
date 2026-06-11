@@ -18,6 +18,8 @@ PortManagerBack/**/mutants.out*/
 # rustc will dump stack traces when hitting an internal compiler error to PWD
 PortManagerBack/rustc-ice-*.txt
 
+PortManagerBack/*.db
+
 # See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
 
 # Compiled output
